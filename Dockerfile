@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.14
 
 LABEL repository="http://github.com/tModLoader/gh-action-nightly-merge"
 LABEL homepage="http://github.com/tModLoader/gh-action-nightly-merge"
@@ -7,7 +7,7 @@ LABEL "com.github.actions.description"="Automatically merge the stable branch in
 LABEL "com.github.actions.icon"="git-merge"
 LABEL "com.github.actions.color"="orange"
 
-RUN apk --no-cache add bash curl git=2.34.1 git-lfs jq
+RUN apk --no-cache add bash curl git git-lfs jq
 
 ADD entrypoint.sh /entrypoint.sh
 
