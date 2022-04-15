@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:latest
 
 LABEL repository="http://github.com/tModLoader/gh-action-nightly-merge"
 LABEL homepage="http://github.com/tModLoader/gh-action-nightly-merge"
